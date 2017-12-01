@@ -1,0 +1,3 @@
+/Users/tishachoudhuri/hedcut/hedcuter/code/build/CMakeFiles/rebuild_cache.dir
+/Users/tishachoudhuri/hedcut/hedcuter/code/build/CMakeFiles/edit_cache.dir
+/Users/tishachoudhuri/hedcut/hedcuter/code/build/CMakeFiles/hedcuter.dir

@@ -262,7 +262,7 @@ runs it generates a random distribution of points using the current time
 so unless they are run at the exact same time then it wouldn't be the
 same output. therefore the same program might result in different points
 distribution or samples. This has been shown in the folder
-build/compare1 which has the same program running on the same image but
+report/compare/compare1 which has the same program running on the same image but
 outputting different results, it was check by using git-diff terminal to
 find the svg tags that are different.
 
@@ -404,7 +404,7 @@ voronoi Method & Hedcuter Method \\
 6. Are the outputs of these stippling methods different the hedcut
 images created by artists (e.g.
 
-I picked up an image from wall street shown in the folder build/compare6
+I picked up an image from wall street shown in the folder report/compare6
 in the folder hedcuter/code/build. The images of the artist, voronoi
 method and hedcuter method are shown below.
 
@@ -466,6 +466,9 @@ insertion sort of the vector before. You can do the same test by
 uncommenting the start and end time in the CVT::vor(cv::Mat \& img)
 method in wcvt.cpp. You can enable this by simply adding -useqsorting
 (stands for use quicker sorting) to the argument when running hedcuter.
+I have added two text files showing the average using quicker sorting method and the original method
+(located in report/improvement ) and have concluded that the time it takes with quicker sorting technique is faster than the original method.
+
 
 I also added a graph that will be used to uncluster the disks to improve
 the distribution. You can do this by using the two options -gclusterv
@@ -477,7 +480,8 @@ distance between two disks is -gclusterdist it will add the edge). The
 aim is that if the number of edges of a point is more than the cluster
 value then uncluster.
 
-
+A timer has been added to stop the iterations when it goes beyond a certain limit specified by the user
+using -timeout\textunderscore count (example -timeout\textunderscore count 30500)
 
 I also wanted to add another option that will create a list for already
 existing points that was if the point in hedcuter has moved to a
@@ -486,6 +490,7 @@ the hedcuter for images with bigger resolution and also improve the
 hedcuter for colored pixels. If the point is moved to that position it
 will add it position to the list then everytime its going to move, it
 will check the list to see if that position has been moved to already.
+
 \bibliographystyle{plain}
 \bibliography{report}
 \end{document}
