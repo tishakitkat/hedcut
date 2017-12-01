@@ -116,8 +116,8 @@ bool Hedcut::build(cv::Mat & input_image, int n)
 	cvt.gpu = this->gpu;
 	cvt.subpixels = this->subpixels;
 	cvt.debug = this->debug;
-  //  cvt.useqsort = this->useqsort;
-   // cvt.timeout = this->timeout;
+    cvt.useqsort = this->useqsort;
+   cvt.timeout = this->timeout;
 
 	clock_t startTime, endTime;
 	startTime = clock();
